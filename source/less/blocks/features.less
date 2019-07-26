@@ -1,3 +1,8 @@
+.features {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .features__main-title {
   font-size: 24px;
   font-weight: 300;
@@ -37,4 +42,25 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    width: @tablet-width;
+  }
+
+  .features__list {
+    padding-left: 330px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    width: @desktop-width;
+  }
+
+  .features__list {
+    display: flex;
+    padding-left: 0;
+  }
 }

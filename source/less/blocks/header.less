@@ -1,7 +1,32 @@
 .header {
+  .mobile-width();
+  position: relative;
+
   background-color: @base-color;
 }
 
 .header__logo-image {
-  margin: 20px;
+  margin-top: 22px;
+  margin-left: 20px;
+}
+
+.header__mobile-top {
+  min-height: 70px;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    width: @tablet-width;
+  }
+
+  .header__mobile-top {
+    min-height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    display: flex;
+    width: @desktop-width;
+  }
 }

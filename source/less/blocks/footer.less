@@ -1,0 +1,25 @@
+.footer {
+  .mobile-width();
+}
+
+.footer__svg-color {
+  fill: @pink-color;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    display: flex;
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    width: @desktop-width;
+  }
+}

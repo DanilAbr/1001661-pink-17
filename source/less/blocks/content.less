@@ -26,7 +26,7 @@
   color: #ffffff;
   text-align: center;
 
-  background-color: #d22856;
+  background-color: @pink-color;
 }
 
 .content__list {
@@ -45,7 +45,43 @@
 
 .content__image {
   display: block;
+  width: 280px;
+  height: 180px;
   margin: 0 auto;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-photo {
+  width: 320px;
+  height: 137px;
+
+  background-image: url("../../img/panorama-mobile@1x.jpg");
+}
+
+.photo-1 {
+  background-image: url("../../img/photo-car-mobile@1x.jpg");
+}
+
+.photo-2 {
+  background-image: url("../../img/photo-drumset-mobile@1x.jpg");
+}
+
+.photo-3 {
+  background-image: url("../../img/photo-window-mobile@1x.jpg");
+}
+
+.photo-4 {
+  background-image: url("../../img/photo-fair-mobile@1x.jpg");
+}
+
+.photo-5 {
+  background-image: url("../../img/photo-pov-mobile@1x.jpg");
+}
+
+.photo-6 {
+  background-image: url("../../img/photo-wing-mobile@1x.jpg");
 }
 
 .content__author-name {
@@ -74,5 +110,23 @@
 .content__likes {
   font-size: 12px;
   text-transform: uppercase;
-  color: #d22856;
+  color: @pink-color;
+}
+
+@media (min-width: @tablet-width) {
+  .main-photo {
+    width: 700px;
+    height: 509px;
+
+    background-image: url("../../img/panorama-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-photo {
+    width: 1200px;
+    height: 506px;
+
+    background-image: url("../../img/panorama-desktop@1x.jpg");
+  }
 }
