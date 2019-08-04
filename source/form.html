@@ -4,35 +4,38 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
-    <header class="header container">
-      <div class="header__mobile-top">
-        <a class="header__logo" href="/source/index.html">
-          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-            alt="Мобильное приложение «Pink»">
-        </a>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__mobile-top">
+          <a class="header__logo" href="/source/index.html">
+            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+              alt="Мобильное приложение «Pink»">
+          </a>
+        </div>
+        <nav class="header__main main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/17">Html academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__main main-nav">
-        <button class="main-nav__toggle" type="button">Закрыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/17">Html academy</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main class="form container">

@@ -4,83 +4,89 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="header">
-      <div class="header__mobile-top">
-        <a class="header__logo" href="/source/index.html">
-          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
-        </a>
+      <div class="header__container">
+        <div class="header__mobile-top">
+          <a class="header__logo" href="/source/index.html">
+            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
+          </a>
+        </div>
+        <nav class="header__main main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/17">Html academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__main main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/17">Html academy</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">"Мобильное приложение «Pink» - раскрась серые будни в розовый цвет!"</h1>
       <section class="download">
         <h2 class="visually-hidden">Загрузка приложения</h2>
-        <div class="download__button-border">
-          <a class="download__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+        <div class="download__wrap">
+          <b class="download__title">Взгляните на жизнь иначе!</b>
+          <div class="download__button-wrap">
+            <a class="download__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+          </div>
+          <ul class="download__system system-list">
+            <li class="system-list__item">
+              <a class="system-list__image system-list__image--ios" href="https://www.apple.com/ru/itunes/">
+                <span class="visually-hidden">Приложение для скачивания на IOS</span>
+              </a>
+            </li>
+            <li class="system-list__item">
+              <a class="system-list__image system-list__image--android" href="https://play.google.com/store/apps?hl=ru">
+                <span class="visually-hidden">Приложение для скачивания на Android</span>
+              </a>
+            </li>
+            <li class="system-list__item">
+              <a class="system-list__image system-list__image--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+                <span class="visually-hidden">Приложение для скачивания на Windows</span>
+              </a>
+            </li>
+          </ul>
+          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <ul class="download__system system-list">
-          <li class="system-list__item">
-            <a class="system-list__image system-list__image--ios" href="https://www.apple.com/ru/itunes/">
-              <span class="visually-hidden">Приложение для скачивания на IOS</span>
-            </a>
-          </li>
-          <li class="system-list__item">
-            <a class="system-list__image system-list__image--android" href="https://play.google.com/store/apps?hl=ru">
-              <span class="visually-hidden">Приложение для скачивания на Android</span>
-            </a>
-          </li>
-          <li class="system-list__item">
-            <a class="system-list__image system-list__image--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows">
-              <span class="visually-hidden">Приложение для скачивания на Windows</span>
-            </a>
-          </li>
-        </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="features__main-title">Устали от серости мегаполиса?</p>
-        <p class="features__main-title">Нам есть, что вам предложить!</p>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__title">Поднимает настроение</h3>
-            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Меняет мир вокруг</h3>
-            <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Заводит новых друзей</h3>
-            <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <p class="features__main-title">Нам есть, что вам<br>предложить!</p>
+        <div class="features__container">
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__title">Поднимает настроение</h3>
+              <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>
