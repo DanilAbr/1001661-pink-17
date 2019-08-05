@@ -2,6 +2,30 @@
   background-color: @base-color;
 }
 
-.header__logo-image {
-  margin: 20px;
+.header__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  margin: 22px 20px;
+}
+
+.header__mobile-top {
+  display: flex;
+  min-height: 70px;
+}
+
+@media (min-width: @tablet-width) {
+  .header__mobile-top {
+    min-height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__container {
+    flex-direction: row;
+    width: @desktop-width;
+    margin: 0 auto;
+  }
 }

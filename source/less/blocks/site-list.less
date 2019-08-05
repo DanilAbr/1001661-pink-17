@@ -1,6 +1,7 @@
 .site-list {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-top: #000001 solid 1px;
 }
 
 .site-list__item {
@@ -8,9 +9,9 @@
   align-items: center;
   justify-content: center;
   min-height: 65px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
-
-  list-style: none;
 
   border-top: #485461 solid 1px;
   border-bottom: #000001 solid 1px;
@@ -21,4 +22,15 @@
   line-height: 32px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    flex-direction: row;
+    border: none;
+  }
+
+  .site-list__item {
+    border: none;
+  }
 }

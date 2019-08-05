@@ -1,14 +1,30 @@
+.features {
+  background: linear-gradient(355deg, #f2f2f2 75%, #ffffff 75%);
+}
+
 .features__main-title {
+  margin: 0;
+  padding-top: 40px;
+
   font-size: 24px;
   font-weight: 300;
   text-align: center;
   color: @base-color;
+
+  &:nth-of-type(2) {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  background-color: #ffffff;
 }
 
 .features__list {
-  padding: 40px 0 325px;
+  margin: 0;
+  padding: 0;
+  padding-top: 45px;
+  padding-bottom: 325px;
 
-  background-color: #f2f2f2;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: 50% 100%;
   background-repeat: no-repeat;
@@ -21,6 +37,7 @@
 .features__title {
   margin: 0;
   margin-bottom: 12px;
+  padding-top: 35px;
 
   color: #000000;
   font-size: 18px;
@@ -31,10 +48,80 @@
 
 .features__text {
   margin: 0;
-  margin-bottom: 33px;
   padding: 0 30px;
 
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .features__main-title {
+    font-size: 40px;
+    margin-top: 60px;
+
+    &:nth-of-type(2) {
+      margin: 0;
+      padding: 0;
+      padding-bottom: 50px;
+    }
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-left: 330px;
+
+    background-image: url("../img/iphone-screen-2-tablet@1x.png");
+    background-position: 0 0;
+  }
+
+  .features__title {
+    text-align: left;
+  }
+
+  .features__text {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__list {
+    padding: 0;
+    width: 940px;
+    min-height: 600px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background: none;
+  }
+
+  .features__item {
+    background-repeat: no-repeat;
+
+    &:nth-child(1) {
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    }
+
+    &:nth-child(3) {
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    }
+  }
+
+  .features__title {
+    padding-top: 360px;
+    text-align: center;
+  }
+
+  .features__text {
+    text-align: center;
+  }
 }
