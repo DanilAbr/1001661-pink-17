@@ -13,10 +13,11 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
   width: 1px;
@@ -28,5 +29,6 @@ img {
 
   border: 0;
   clip: rect(0 0 0 0);
+  clip-path: inset(100%);
   overflow: hidden;
 }

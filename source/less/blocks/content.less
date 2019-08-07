@@ -9,20 +9,26 @@
 .content__list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  width: 300px;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
 
   list-style: none;
+}
+
+.content__item {
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
 }
 
 .content__wrap {
   width: 280px;
   padding: 20px;
+  margin: 0 auto;
   margin-bottom: 20px;
   box-sizing: border-box;
-
-  background-color: #f2f2f2;
 }
 
 .content__image {
@@ -96,9 +102,14 @@
   }
 
   .content__list {
+    flex-direction: row;
     justify-content: space-between;
     width: 620px;
     margin: 0 auto;
+  }
+
+  .content__item {
+    width: 300px;
   }
 
   .content__image {

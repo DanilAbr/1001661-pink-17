@@ -1,13 +1,15 @@
-.main-photo__title {
+.main-photo {
   position: relative;
+}
+
+.main-photo__title {
+  position: absolute;
   top: 0;
-  right: -94%;
+  right: 20px;
 
   display: block;
   width: 140px;
   margin: 0;
-  margin-left: -140px;
-  margin-bottom: -37px;
   padding: 10px 15px;
   box-sizing: border-box;
 
@@ -32,6 +34,8 @@
 }
 
 .main-photo__wrap {
+  align-self: auto;
+  max-width: 940px;
   margin: 20px;
   margin-top: 0;
   padding: 20px;
@@ -41,6 +45,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-photo__title {
+    top: 60px;
+    right: 20px;
+  }
+
   .main-photo__image {
     height: 509px;
 
@@ -50,6 +59,13 @@
 
   .main-photo__wrap {
     height: 120px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 980px) {
+  .main-photo__wrap {
+    margin: 0 auto;
     margin-bottom: 50px;
   }
 }
