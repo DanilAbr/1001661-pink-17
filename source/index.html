@@ -9,19 +9,18 @@
 
   <body>
     <header class="header">
-      <div class="header__container">
-        <div class="header__mobile-top">
-          <a class="header__logo" href="/source/index.html">
-            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
+      <nav class="header__main main-nav main-nav--opened main-nav--nojs">
+        <div class="header__wrap">
+          <a class="header__logo" href="index.html">
+            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+              alt="Мобильное приложение«Pink»">
           </a>
-        </div>
-        <nav class="header__main main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Закрыть меню</span>
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link">Главная</a>
+              <a class="site-list__link site-list__link--active">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="photo.html">Фотографии</a>
@@ -33,16 +32,16 @@
               <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/17">Html academy</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">"Мобильное приложение «Pink» - раскрась серые будни в розовый цвет!"</h1>
       <section class="download">
         <h2 class="visually-hidden">Загрузка приложения</h2>
+        <b class="download__title">Взгляните на жизнь иначе!</b>
         <div class="download__wrap">
-          <b class="download__title">Взгляните на жизнь иначе!</b>
           <div class="download__button-wrap">
             <a class="download__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
           </div>
@@ -88,6 +87,36 @@
           </ul>
         </div>
       </section>
+
+      <section class="all-day">
+        <div class="all-day__wrap">
+          <div class="all-day__num">
+            <div class="all-day__num-wrap">24</div>
+          </div>
+          <div class="all-day__column-wrap">
+            <h2 class="all-day__title">Эффект<br> на 24 часа!</h2>
+            <p class="all-day__text">Британские ученые провели исследования и доказали,<br> что положительный эффект<br> от использования приложения длится целые сутки!</p>
+            <a class="all-day__link" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
