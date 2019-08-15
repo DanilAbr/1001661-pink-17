@@ -9,12 +9,13 @@
 
   <body>
     <header class="header">
-      <div class="header__container">
-        <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение«Pink»">
-        </a>
-        <nav class="header__main main-nav main-nav--opened main-nav--nojs">
-          <button class="main-nav__toggle " type="button">
+      <nav class="header__main main-nav main-nav--opened main-nav--nojs">
+        <div class="header__wrap">
+          <a class="header__logo" href="index.html">
+            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+              alt="Мобильное приложение«Pink»">
+          </a>
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Закрыть меню</span>
           </button>
           <ul class="main-nav__list site-list">
@@ -31,8 +32,8 @@
               <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/17">Html academy</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -86,7 +87,21 @@
           </ul>
         </div>
       </section>
+
+      <section class="all-day">
+        <div class="all-day__wrap">
+          <div class="all-day__num">
+            <div class="all-day__num-wrap">24</div>
+          </div>
+          <div class="all-day__column-wrap">
+            <h2 class="all-day__title">Эффект<br> на 24 часа!</h2>
+            <p class="all-day__text">Британские ученые провели исследования и доказали,<br> что положительный эффект<br> от использования приложения длится целые сутки!</p>
+            <a class="all-day__link" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
     </main>
+
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');

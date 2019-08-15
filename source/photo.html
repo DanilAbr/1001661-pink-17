@@ -9,12 +9,11 @@
 
   <body>
     <header class="header">
-      <div class="header__container">
-        <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-            alt="Мобильное приложение«Pink»">
-        </a>
-        <nav class="header__main main-nav main-nav--opened">
+      <nav class="header__main main-nav main-nav--opened main-nav--nojs">
+        <div class="header__wrap">
+          <a class="header__logo" href="index.html">
+            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
+          </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Закрыть меню</span>
           </button>
@@ -32,8 +31,8 @@
               <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/17">Html academy</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
     <main class="photo">
@@ -42,7 +41,7 @@
         <p class="content__text">Взгляните на Фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
         <div class="content__main-photo main-photo">
           <h2 class="main-photo__title">Панорама дня</h2>
-          <div class="main-photo__image"></div>
+          <img src="img/panorama-mobile@1x.jpg" class="main-photo__image" width="320" height="137" alt="Фото моста в горах">
           <div class="main-photo__wrap">
             <cite class="content__author-name">Анна</cite>
             <p class="content__time">(5 минут назад)</p>
@@ -54,7 +53,7 @@
         <ul class="content__list">
           <li class="content__item">
             <a class="content__full-image" href="#">
-              <div class="content__image photo-1"></div>
+              <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" class="content__image" alt="Фото автомобиля">
             </a>
             <div class="content__wrap">
               <cite class="content__author-name">Левон</cite>
@@ -65,7 +64,7 @@
           </li>
           <li class="content__item">
             <a class="content__full-image" href="#">
-              <div class="content__image photo-2"></div>
+              <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" class="content__image" alt="Фото барабанной установки">
             </a>
             <div class="content__wrap">
               <cite class="content__author-name">Антон</cite>
@@ -76,7 +75,7 @@
           </li>
           <li class="content__item">
             <a class="content__full-image" href="#">
-              <div class="content__image photo-3"></div>
+              <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" class="content__image" alt="Фото стеклянной крыши">
             </a>
             <div class="content__wrap">
               <cite class="content__author-name">Борис</cite>
@@ -87,7 +86,7 @@
           </li>
           <li class="content__item">
             <a class="content__full-image" href="#">
-              <div class="content__image photo-4"></div>
+              <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" class="content__image" alt="Фото палатки с ярамарки">
             </a>
             <div class="content__wrap">
               <cite class="content__author-name">Сергей</cite>
@@ -98,7 +97,7 @@
           </li>
           <li class="content__item">
             <a class="content__full-image" href="#">
-              <div class="content__image photo-5"></div>
+              <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" class="content__image" alt="Фото ног мужчины, сидящего на горе">
             </a>
             <div class="content__wrap">
               <cite class="content__author-name">Максим</cite>
@@ -109,7 +108,7 @@
           </li>
           <li class="content__item">
             <a class="content__full-image" href="#">
-              <div class="content__image photo-6"></div>
+              <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" class="content__image" alt="Фото крыла самолёта">
             </a>
             <div class="content__wrap">
               <cite class="content__author-name">Надежда</cite>
@@ -169,6 +168,7 @@
         </a>
       </div>
     </footer>
+
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');

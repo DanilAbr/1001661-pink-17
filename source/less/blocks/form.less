@@ -2,7 +2,8 @@
   display: block;
   margin: 0;
   padding: 35px 30px;
-  height: 170px;
+  padding-top: 100px;
+  height: 240px;
   box-sizing: border-box;
 
   font-size: 24px;
@@ -12,18 +13,20 @@
 
   background-color: @base-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 50% -67px;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: @tablet-width) {
   .form__title {
-    min-height: 330px;
+    min-height: 440px;
+    padding-top: 180px;
 
     font-size: 50px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% -110px;
+    background-position: 50% 50%;
   }
 }
 

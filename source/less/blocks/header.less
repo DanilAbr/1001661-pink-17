@@ -1,12 +1,5 @@
 .header {
-  background-color: @base-color;
-}
-
-.header__container {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
 }
 
 .header__logo {
@@ -30,16 +23,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .header__container {
-    flex-direction: row;
-    width: 940px;
+  .header__wrap {
+    display: flex;
+    width: @desktop-width;
+    margin: 0 auto;
   }
 }
