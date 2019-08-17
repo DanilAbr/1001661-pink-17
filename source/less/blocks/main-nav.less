@@ -79,11 +79,16 @@
   top: 0;
   left: 0;
   width: 100%;
+
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav--nojs .site-list__item {
   display: flex;
+}
+
+.main-nav--closed .site-list {
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -95,11 +100,15 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .main-nav--closed.main-nav {
+    position: static;
+    width: @desktop-width;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .main-nav__list {
